@@ -2,7 +2,9 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
-  <link href="https://dn-phphub.qbox.me/uploads/avatars/4486_1463849877.jpeg?imageView2/1/w/100/h/100" rel="shortcut icon">
+  <link rel="shortcut icon" href="<?php $this->options->themeUrl('')?>img/autumn.png" type="image/png" />
+  <link rel="bookmark" href="<?php $this->options->themeUrl('')?>img/autumn.png" type="image/png" />
+
   <meta charset="<?php $this->options->charset(); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <meta name="renderer" content="webkit">
@@ -13,10 +15,12 @@
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
          ), '', ' - '); ?><?php $this->options->title(); ?></title>
+
   <?php if ($this->options->siteIcon): ?>
   <link rel="Shortcut Icon" href="<?php $this->options->siteIcon() ?>" />
   <link rel="Bootmark" href="<?php $this->options->siteIcon() ?>" />
   <?php endif; ?>
+
   <?php $this->header(); ?>
   <link rel="stylesheet" href="<?php $this->options->themeUrl('css/bootstrap.min.css'); ?>">
   <link rel="stylesheet" href="<?php $this->options->themeUrl('css/material.min.css'); ?>">
