@@ -37,15 +37,15 @@ function timer_stop( $display = 0, $precision = 3 ) {
     return $r;
 }
 
-// 设置时区
-date_default_timezone_set('Asia/Shanghai');
 /**
  * 秒转时间，格式 年 月 日 时 分 秒
  *
  */
 function getBuildTime() {
     // 在下面按格式输入本站创建的时间
-    $site_create_time = strtotime('2023-04-15 03:01:00');
+    $start = '2023-04-15 03:01:00';
+    $timezone = new DateTimeZone("Asia/Shanghai");
+    $site_create_time = DateTime::createFromFormat('Y-m-d H:i:s', $start, $timezone)->getTimestamp();
     $time = time() - $site_create_time;
     if (is_numeric($time)) {
         $value = array(
