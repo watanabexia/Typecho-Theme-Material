@@ -360,6 +360,13 @@ a, a:hover, a:focus,
     font-size: 1.25em;
 }
 
+.panel.panel-default>.panel-body>.post-content>p>a
+/* .panel.panel-default>.panel-body>.post-content>a:hover, */
+/* .panel.panel-default>.panel-body>.post-content>a:focus */
+{
+    color: #2f81f7;
+}
+
 blockquote {
     font-size: 1em;
 }
