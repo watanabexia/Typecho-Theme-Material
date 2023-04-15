@@ -39,6 +39,6 @@
 	scrollText: "回顶部"
 	});
 	$('#scrollUp').addClass('btn btn-info btn-fab btn-raised mdi-navigation-expand-less');
-	</script>	
+	</script>
 </body>
 </html>

@@ -361,8 +361,6 @@ a, a:hover, a:focus,
 }
 
 .panel.panel-default>.panel-body>.post-content>p>a
-/* .panel.panel-default>.panel-body>.post-content>a:hover, */
-/* .panel.panel-default>.panel-body>.post-content>a:focus */
 {
     color: #2f81f7;
 }
@@ -379,4 +377,17 @@ pre {
 code {
     color: rgb(255, 249, 184);
     background-color: rgba(110,118,129,0.4);
+}
+
+@media (max-width: 767px) {
+    .about_box,
+    .recent_posts_box,
+    .comments_box,
+    .tags_box,
+    .article_cate_box,
+    .friend_link,
+    .other_box,
+    .globe_box {
+        display: none;
+    }
 }
