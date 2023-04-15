@@ -41,9 +41,9 @@ footer {
 }
 
 .billboard {
-    background: #b8d9fa url(../img/billboard.jpg) center center repeat-x;
+    background: #b8d9fa url(../img/kinkoi.jpg);
     background-size: cover;
-    padding: 170px 0 100px;
+    padding: 250px 0 100px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .25), 0 2px 8px rgba(0, 0, 0, .12)
 }
 
