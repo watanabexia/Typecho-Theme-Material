@@ -1,12 +1,12 @@
 <?php
 
 /**
- * 这是HanSon 基于material 的Typecho模板
+ * Material theme for Typecho
  *
  * @package Material Theme
- * @author HanSon
- * @version 2.0.0
- * @link http://hanc.cc
+ * @author 夏同光
+ * @version 1.0
+ * @link http://xiatg.me
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
