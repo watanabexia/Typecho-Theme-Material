@@ -6,7 +6,7 @@
  * @package Material Theme
  * @author 夏同光
  * @version 1.0
- * @link http://xiatg.me
+ * @link https://xiatg.me
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
