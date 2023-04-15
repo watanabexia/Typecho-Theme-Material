@@ -37,23 +37,33 @@
           </button>
           <a class="navbar-brand" id="logo" href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>
         </div>
+
+        <!-- Navigation Bar -->
         <div class="navbar-collapse collapse navbar-responsive-collapse">
+
+          <!-- Navigation Bar Left -->
           <ul class="nav navbar-nav">
 
+            <!-- Home -->
             <li<?php if($this->is('index')): ?> class="active"<?php endif; ?>><a href="<?php $this->options->siteUrl(); ?>"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <?php $this->options->title() ?></a></li>
             
+            <!-- Category -->
             <?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
+
             <?php while($category->next()): ?>
               <?php if(count($category->children)):?>
+                <!-- Sub categories available -->
                 <li class="dropdown"><a href="<?php $category->permalink(); ?>" data-target="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category->name?><b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="<?php echo $category->permalink(); ?>"><?php echo $category->name ?></a></li>
-                  <?php foreach($category->children as $k=>$v):?>
-                  <li><a href="<?php echo $v['permalink'] ?>"><?php echo $v['name'] ?></a></li>
-                  <?php endforeach; ?>
-                </ul></li>
+                  <ul class="dropdown-menu">
+                    <li><a href="<?php echo $category->permalink(); ?>"><?php echo $category->name ?></a></li>
+                    <?php foreach($category->children as $k=>$v):?>
+                    <li><a href="<?php echo $v['permalink'] ?>"><?php echo $v['name'] ?></a></li>
+                    <?php endforeach; ?>
+                  </ul>
+                </li>
               <?php else:?>
-                <?php if($category->levels == 0):?>
+                <!-- Single category -->
+                <?php if($category->levels == 0 and $category->name != "默认分类"):?>
                   <li<?php if ($this->is('category', $category->slug)): ?> class="active"<?php endif; ?>><a href="<?php $category->permalink(); ?>" title="<?php $category->name(); ?>"><?php $category->name(); ?></a></li>
                 <?php endif;?>
               <?php endif;?>
@@ -61,27 +71,24 @@
 
           </ul>
 
+          <!-- Navigation Bar Right -->
           <ul class="nav navbar-nav navbar-right">
 
             <?php $this->widget('Widget_Contents_Page_List')->to($pages); ?>
-            
+
+            <!-- Page -->
             <?php while($pages->next()): ?>
               <li<?php if($this->is('page', $pages->slug)): ?> class="active"<?php endif; ?>><a href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a></li>
             <?php endwhile; ?>
 
+            <!-- Login -->
             <?php if ( !empty($this->options->misc) && in_array('ShowLogin', $this->options->misc) ) : ?>
-
               <?php if($this->user->hasLogin()): ?>
-
                 <li><a href="<?php $this->options->adminUrl(); ?>"><?php $this->user->screenName(); ?></a></li>
                 <li><a href="<?php $this->options->logoutUrl(); ?>">登出</a></li>
-
               <?php else: ?>
-
                 <li><a href="<?php $this->options->adminUrl('login.php'); ?>">登录</a></li>
-
               <?php endif; ?>
-
             <?php endif; ?>
             
           </ul>
