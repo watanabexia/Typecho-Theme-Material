@@ -5,6 +5,11 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="pull-left copyright">Copyright &copy; 2021 - <?php _e(date('Y'));?>&nbsp;<?php $this->options->title(); ?></div>
+				
+				<ul class="footer-nav pull-left">
+					<li> <?php getBuildTime(); ?> </li>
+				</ul>
+
 				<ul class="footer-nav pull-right">
 					<li>Powered by <a href="http://typecho.org/" rel="nofollow">Typecho)))</a> & <a href="https://github.com/watanabexia/Typecho-Theme-Material" rel="nofollow">Material</a></li>
 
