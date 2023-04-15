@@ -38,7 +38,6 @@ footer {
 .navbar.navbar-inverse {
     border: 0;
     box-shadow: 0 0 10px #000;
-    background-color: rgba(63, 81, 181, .92)
 }
 
 .billboard {
@@ -136,8 +135,6 @@ footer {
     margin-left: -1px;
     line-height: 1.428571429;
     text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #ddd
 }
 
 #search-btn {
@@ -153,8 +150,6 @@ footer {
     display: block;
     padding: 10px 15px;
     margin-bottom: -1px;
-    border: 1px solid #EEE;
-    color: #555;
     text-decoration: none;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -309,4 +304,44 @@ cite.fn {
 #scrollUp {
     bottom: 20px;
     right: 20px;
+}
+
+/* Theme Color */
+.navbar.navbar-inverse {
+    background-color: rgba(62, 62, 62, .92);
+}
+
+.panel {
+    background-color: rgb(53, 54, 58);
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(62, 62, 62);
+}
+
+a, a:hover, a:focus {
+    color: rgb(255, 255, 255);
+}
+
+.col-md-3 .panel .item {
+    color: rgb(255, 255, 255);
+}
+
+.col-md-3 .panel .item {
+    background-color: rgb(53, 54, 58);
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+  
+.col-md-3 .panel .item:hover {
+    background-color: rgb(77, 78, 82); /* Set the hover color to a slightly lighter gray */
+}
+
+.col-md-3 .panel a.panel-heading {
+    background-color: rgb(44, 42, 42);
+}
+
+.page-navigator>li>a {
+    background-color: rgb(44, 42, 42);
+    border: 1px solid #565656;
 }
