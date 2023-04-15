@@ -391,3 +391,30 @@ code {
         display: none;
     }
 }
+
+/* Amadeus About Side Panel */
+
+.amadeus_about>.photo-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.amadeus_about>.photo-background>a,
+.amadeus_about>.photo-background>p,
+.amadeus_about>.photo-background>p {
+    align-self: center;
+    text-align: center;
+}
+
+.amadeus_about>.photo-background>a {
+    padding-top: 20px;
+}
+
+.amadeus_about>.photo-background>a>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
