@@ -311,37 +311,38 @@ cite.fn {
     background-color: rgba(62, 62, 62, .92);
 }
 
-.panel {
-    background-color: rgb(53, 54, 58);
-}
-
 body {
-    color: rgb(255, 255, 255);
     background-color: rgb(62, 62, 62);
 }
 
-a, a:hover, a:focus {
-    color: rgb(255, 255, 255);
-}
-
-.col-md-3 .panel .item {
-    color: rgb(255, 255, 255);
-}
-
-.col-md-3 .panel .item {
+.panel,
+.col-md-3 .panel .item,
+#comments .comment-list li {
     background-color: rgb(53, 54, 58);
+}
+
+.col-md-3 .panel .item {
     transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
-  
+
+body,
+a, a:hover, a:focus,
+.col-md-3 .panel .item,
+.form-group .control-label, 
+.form-group-default .control-label,
+.form-control {
+    color: rgb(255, 255, 255);
+}
+
 .col-md-3 .panel .item:hover {
     background-color: rgb(77, 78, 82); /* Set the hover color to a slightly lighter gray */
 }
 
-.col-md-3 .panel a.panel-heading {
+.col-md-3 .panel a.panel-heading,
+.page-navigator>li>a {
     background-color: rgb(44, 42, 42);
 }
 
 .page-navigator>li>a {
-    background-color: rgb(44, 42, 42);
     border: 1px solid #565656;
 }
