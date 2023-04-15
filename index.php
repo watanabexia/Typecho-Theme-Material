@@ -41,7 +41,7 @@ $this->need('header.php');
           </div>
         </div>
         <?php endwhile; ?>
-        <?php $this->pageNav('<< 上一页', '下一页 >>'); ?>
+        <?php $this->pageNav('<<', '>>'); ?>
       </div>
 
       <?php $this->need('sidebar.php'); ?>
