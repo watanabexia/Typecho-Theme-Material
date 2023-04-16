@@ -13,14 +13,14 @@
 
 	<div class="panel panel-info">
 		<a class="panel-heading" onclick="$('.about_box').slideToggle()" href="javascript:;">
-	        <h3 class="panel-title">关于我</h3>
+	        <h3 class="panel-title">Me</h3>
 	    </a>
 
 		<div class="about_box">
 			<aside class="amadeus_about" style="display: block;">
 				<div class="photo-background" style="background:url(<?php $this->options->themeUrl('')?>img/kinkoi-hamana.gif) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
 					
-					<a href="https://xiatg.me/index.php/start-page.html" title="关于我">
+					<a href="https://xiatg.me/about.html" title="关于我">
 						<img src="<?php $this->options->themeUrl('')?>img/autumn.png" alt="关于我">
 						<p>夏同光</p>
 					</a>
@@ -34,7 +34,7 @@
 
 	<div class="panel panel-info">
 	    <a class="panel-heading" onclick="$('.recent_posts_box').slideToggle()" href="javascript:;">
-	        <h3 class="panel-title">最新文章</h3>
+	        <h3 class="panel-title">Articles</h3>
 	    </a>
 	    <div class="recent_posts_box">
 	       <?php $this->widget('Widget_Contents_Post_Recent')
@@ -45,7 +45,7 @@
 	<?php $this->widget('Widget_Comments_Recent')->to($comments); ?>
 	<div class="panel panel-info">
 	    <a class="panel-heading" onclick="$('.comments_box').slideToggle()" href="javascript:;">
-	        <h3 class="panel-title">最新回复</h3>
+	        <h3 class="panel-title">Comments</h3>
 	    </a>
 	    <div class="comments_box">
 			<?php while($comments->next()): ?>
@@ -57,7 +57,7 @@
 	<?php $this->widget('Widget_Metas_Tag_Cloud', 'sort=count&ignoreZeroCount=1&desc=1&limit=5')->to($tags); ?>
 	<div class="panel panel-info">
 	    <a class="panel-heading" onclick="$('.tags_box').slideToggle()" href="javascript:;">
-	        <h3 class="panel-title">标签</h3>
+	        <h3 class="panel-title">Tags</h3>
 	    </a>
 		<div class="tags_box">
 			<?php if($tags->have()): ?>
@@ -72,7 +72,7 @@
 
 	<div class="panel panel-info">
 	    <a class="panel-heading" onclick="$('.article_cate_box').slideToggle()" href="javascript:;">
-	        <h3 class="panel-title">归档</h3>
+	        <h3 class="panel-title">Archive</h3>
 	    </a>
 	    <div class="article_cate_box">
 	       <?php $this->widget('Widget_Contents_Post_Date', 'type=month&format=F Y')
@@ -82,7 +82,7 @@
 
 	<div class="panel panel-info">
 		<a class="panel-heading" onclick="$('.friend_link').slideToggle()" href="javascript:;">
-			<h3 class="panel-title">友情链接</h3>
+			<h3 class="panel-title">友链</h3>
 		</a>
 		<div class="friend_link">
 			<p target="_blank" class="item"> <a href="http://www.lisuju.com/" >Li Suju</a> ~ 2021.10.31 </p>
@@ -91,7 +91,7 @@
  
 	<div class="panel panel-info">
 	    <a class="panel-heading" onclick="$('.other_box').slideToggle()" href="javascript:;">
-	        <h3 class="panel-title">其他</h3>
+	        <h3 class="panel-title">RSS</h3>
 	    </a>
 	    <div class="other_box">
 	       <a href="<?php $this->options->feedUrl(); ?>" class="item"><?php _e('文章 RSS'); ?></a>

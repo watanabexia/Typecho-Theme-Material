@@ -32,12 +32,12 @@ $this->need('header.php');
           <div class="panel-body">
             <h3 class="post-title"><a href="<?php $this->permalink(); ?>"><?php $this->title(); ?></a></h3>
             <div class="post-meta">
-              <span>作者：<a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a> | </span>
-              <span>时间：<?php $this->date('F j, Y'); ?> | </span>
-              <span>分类：<?php $this->category(','); ?> | </span>
-              <span>评论：<a href="<?php $this->permalink() ?>"><?php $this->commentsNum('%d 评论'); ?></a> </span>
+              <span><a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a> | </span>
+              <span><?php $this->date('F j, Y'); ?> | </span>
+              <span><?php $this->category(','); ?> | </span>
+              <span><a href="<?php $this->permalink() ?>"><?php $this->commentsNum('%d Comments'); ?></a> </span>
             </div>
-            <div class="post-content"><?php $this->content('Continue Reading...'); ?></div>
+            <div class="post-content"><?php $this->content('Read more...'); ?></div>
           </div>
         </div>
         <?php endwhile; ?>
