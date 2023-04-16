@@ -18,7 +18,7 @@
 
 		<div class="about_box">
 			<aside class="amadeus_about" style="display: block;">
-				<div class="photo-background" style="background:url(https://plumz.me/static/bgm_tukuyomi.jpg) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+				<div class="photo-background" style="background:url(<?php $this->options->themeUrl('')?>img/kinkoi-hamana.gif) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
 					
 					<a href="https://xiatg.me/index.php/start-page.html" title="关于我">
 						<img src="<?php $this->options->themeUrl('')?>img/autumn.png" alt="关于我">

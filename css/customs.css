@@ -400,11 +400,15 @@ code {
     justify-content: center;
 }
 
-.amadeus_about>.photo-background>a,
-.amadeus_about>.photo-background>p,
-.amadeus_about>.photo-background>p {
+.amadeus_about>.photo-background>a {
     align-self: center;
+}
+
+.amadeus_about>.photo-background>a>p,
+.amadeus_about>.photo-background>p {
+    color:rgb(44, 42, 42);
     text-align: center;
+    font-weight: bold;
 }
 
 .amadeus_about>.photo-background>a {
