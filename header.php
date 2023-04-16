@@ -94,16 +94,18 @@
 
             <!-- Page -->
             <?php while($pages->next()): ?>
-              <li<?php if($this->is('page', $pages->slug)): ?> class="active"<?php endif; ?>><a href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a></li>
+              <?php if($pages->slug != "log"):?>
+                <li<?php if($this->is('page', $pages->slug)): ?> class="active"<?php endif; ?>><a href="<?php $pages->permalink(); ?>" title="<?php $pages->title(); ?>"><?php $pages->title(); ?></a></li>
+              <?php endif;?>
             <?php endwhile; ?>
 
             <!-- Login -->
             <?php if ( !empty($this->options->misc) && in_array('ShowLogin', $this->options->misc) ) : ?>
               <?php if($this->user->hasLogin()): ?>
                 <li><a href="<?php $this->options->adminUrl(); ?>"><?php $this->user->screenName(); ?></a></li>
-                <li><a href="<?php $this->options->logoutUrl(); ?>">登出</a></li>
+                <li><a href="<?php $this->options->logoutUrl(); ?>">Logout</a></li>
               <?php else: ?>
-                <li><a href="<?php $this->options->adminUrl('login.php'); ?>">登录</a></li>
+                <li><a href="<?php $this->options->adminUrl('login.php'); ?>">Login</a></li>
               <?php endif; ?>
             <?php endif; ?>
             
