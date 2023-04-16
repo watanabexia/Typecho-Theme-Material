@@ -101,7 +101,7 @@
 
 	<div class="panel panel-info">
 		<a class="panel-heading" onclick="$('.globe_box').slideToggle()" href="javascript:;">
-			<h3 class="panel-title">Visitor Footprint</h3>
+			<h3 class="panel-title">Footprints</h3>
 		</a>
 		<div class="globe_box">
 			<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=59kxxhtno0g&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=0" async="async"></script>
