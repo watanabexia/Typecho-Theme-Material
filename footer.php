@@ -11,14 +11,19 @@
 				</ul>
 
 				<ul class="footer-nav pull-right">
-					<li>Powered by <a href="http://typecho.org/" rel="nofollow">Typecho)))</a> & <a href="https://github.com/watanabexia/Typecho-Theme-Material" rel="nofollow">Material</a></li>
+
+					<li><a href="https://xiatg.me/log.html" rel="nofollow">log</a></li>
+
+					<li><a href="https://dash.xiatg.me" rel="nofollow"><i class="glyphicon glyphicon-dashboard"></i></a></li>
+
+					<li><a href="http://typecho.org/" rel="nofollow">Typecho)))</a></li>
 
 					<?php if($this->options->miibeian) : ?>
 					<li><a href="http://www.miibeian.gov.cn" rel="nofollow"><?php echo $this->options->miibeian; ?></a></li>
 					<?php endif; ?>
 
 					<?php if ( !empty($this->options->misc) && in_array('ShowLoadTime', $this->options->misc) ) : ?>
-					<li>加载耗时：<?php echo timer_stop(); ?></li>
+					<li><?php echo timer_stop(); ?></li>
 					<?php endif; ?>
 				</ul>
 			</div>
