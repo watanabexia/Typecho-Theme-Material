@@ -40,13 +40,6 @@ footer {
     box-shadow: 0 0 10px #000;
 }
 
-.billboard {
-    background: #b8d9fa url(../img/kinkoi.jpg) center;
-    background-size: cover;
-    padding: 160px 0 100px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .25), 0 2px 8px rgba(0, 0, 0, .12)
-}
-
 .billboard .intro {
     color: #fff;
     text-shadow: 0 0 15px #202020
@@ -347,6 +340,46 @@ a, a:hover, a:focus,
     border: 1px solid #565656;
 }
 
+/* Banner */
+
+.billboard {
+    background: #b8d9fa url(../img/kinkoi.jpg) center;
+    background-size: cover;
+    padding: 160px 0 100px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25), 0 2px 8px rgba(0, 0, 0, .12)
+}
+
+/* Amadeus About Side Panel */
+
+.amadeus_about>.photo-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.amadeus_about>.photo-background>a {
+    align-self: center;
+}
+
+.amadeus_about>.photo-background>a>p,
+.amadeus_about>.photo-background>p {
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+}
+
+.amadeus_about>.photo-background>a {
+    padding-top: 20px;
+}
+
+.amadeus_about>.photo-background>a>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
 /* Post Content */
 .panel.panel-default>.panel-body>.post-content>h1 {
     font-size: 2em;
@@ -390,35 +423,4 @@ code {
     .globe_box {
         display: none;
     }
-}
-
-/* Amadeus About Side Panel */
-
-.amadeus_about>.photo-background {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.amadeus_about>.photo-background>a {
-    align-self: center;
-}
-
-.amadeus_about>.photo-background>a>p,
-.amadeus_about>.photo-background>p {
-    color:rgb(44, 42, 42);
-    text-align: center;
-    font-weight: bold;
-}
-
-.amadeus_about>.photo-background>a {
-    padding-top: 20px;
-}
-
-.amadeus_about>.photo-background>a>img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
